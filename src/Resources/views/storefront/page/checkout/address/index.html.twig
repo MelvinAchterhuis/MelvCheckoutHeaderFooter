@@ -1,9 +1,17 @@
 {% sw_extends '@Storefront/storefront/page/checkout/address/index.html.twig' %}
 
 {% block base_header %}
-    {{ block('base_header', '@Storefront/storefront/base.html.twig') }}
+    {% if config('MelvCheckoutHeaderFooter.config.showOnAddress') %}
+        {{ block('base_header', '@Storefront/storefront/base.html.twig') }}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
 {% endblock %}
 
 {% block base_footer %}
-    {{ block('base_footer', '@Storefront/storefront/base.html.twig') }}
+    {% if config('MelvCheckoutHeaderFooter.config.showOnAddress') %}
+        {{ block('base_footer', '@Storefront/storefront/base.html.twig') }}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
 {% endblock %}

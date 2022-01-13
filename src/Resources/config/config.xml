@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Header and footer</title>
+
+        <input-field type="bool">
+            <name>showOnAccount</name>
+            <label>Enabled on account order area</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showOnAddress</name>
+            <label>Enabled on register order area</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showOnConfirm</name>
+            <label>Enabled on confirm order area</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>ShowOnFinish</name>
+            <label>Enabled on finish order area</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+    </card>
+</config>
